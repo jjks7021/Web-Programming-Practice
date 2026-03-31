@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>상담카드</title>
+    <style>
+      table {
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">상담카드</h2>
+    <form>
+      <table>
+        <tr>
+          <td class="label">좌우명</td>
+          <td colspan="3"><input type="text" style="width: 89%" /></td>
+        </tr>
+        <tr>
+          <td class="label">학번</td>
+          <td><input type="text" size="20" /></td>
+          <td class="label">이름</td>
+          <td><input type="text" size="20" /></td>
+        </tr>
+        <tr>
+          <td class="label">주민<br />번호</td>
+          <td>
+            <input type="text" size="10" maxlength="6" /> -
+            <input type="password" size="10" maxlength="7" />
+          </td>
+          <td class="label">메일<br />주소</td>
+          <td><input type="email" size="25" /></td>
+        </tr>
+        <tr>
+          <td class="label">상담<br />희망일</td>
+          <td><input type="date" /></td>
+          <td class="label">연락처</td>
+          <td>
+            <select>
+              <option>010</option>
+              <option>011</option>
+            </select>
+            - <input type="text" size="4" /> - <input type="text" size="4" />
+          </td>
+        </tr>
+        <tr>
+          <td class="label">희망<br />진로</td>
+          <td colspan="3">
+            <input type="radio" name="job" />대학원
+            <input type="radio" name="job" />대기업
+            <input type="radio" name="job" />창업
+            <input type="radio" name="job" checked />유학
+          </td>
+        </tr>
+        <tr>
+          <td class="label">학습량<br />(0~24시간)</td>
+          <td colspan="3">
+            <input type="text" size="10" /> 시간<br />
+            집중 정도(0~10) : 0
+            <input type="range" min="0" max="10" list="ticks" /> 10
+            <datalist id="ticks">
+              <option value="1" label="low"></option>
+              <option value="5" label="medium"></option>
+              <option value="9" label="high"></option>
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">상담 희망<br />목록</td>
+          <td colspan="3">
+            <textarea
+              style="width: 99%; height: 80px"
+              placeholder="유무선네트워킹"
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
