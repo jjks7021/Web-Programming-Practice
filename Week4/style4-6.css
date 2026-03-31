@@ -1,0 +1,30 @@
+body {
+  background-color: aliceblue;
+}
+
+h1 {
+  color: brown;
+  text-align: center;
+}
+
+header {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: "휴먼편지체", "맑은 고딕", sans-serif;
+  font-size: 1em;
+  text-indent: 1em;
+}
+
+h2 {
+  color: blue;
+  text-shadow: 2px 2px 3px gray;
+}
+ul {
+  border: 1px dashed black;
+}
+li {
+  color: blue;
+}

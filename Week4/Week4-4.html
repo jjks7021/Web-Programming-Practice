@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>text-shadow와 box-shadow</title>
+    <style>
+      h1 {
+        color: yellow;
+        text-shadow: 2px 2px 5px blueviolet;
+        text-align: center;
+      }
+
+      .site-img {
+        width: 200px;
+        border: 1px solid #ccc;
+        margin: 10px;
+      }
+      .site-img:hover {
+        box-shadow: 5px 5px 15px blue;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Most Visited Pages</h1>
+    <hr />
+    <div class="container">
+      <img src="naver.png" class="site-img" />
+      <img src="google.png" class="site-img" />
+      <img src="chosun.png" class="site-img" />
+    </div>
+  </body>
+</html>
