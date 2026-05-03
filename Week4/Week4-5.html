@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <title>문서구조화</title>
     <style>
-      hr {
-        width: 380px;
-      }
       #wrapper {
         width: 600px;
       }
@@ -15,13 +12,15 @@
         height: 120px;
         background: blue;
       }
-      hgroup h1 {
+      header h1 {
         color: white;
         padding: 10px 0 0 20px;
+        margin: 0;
       }
-      hgroup h5 {
+      header h5 {
         color: white;
         padding-left: 20px;
+        margin: 0;
       }
 
       nav {
@@ -30,27 +29,14 @@
         background: skyblue;
         margin-left: 20px;
       }
+      nav ul {
+        margin: 0;
+        padding: 0;
+      }
       nav li {
         float: left;
         list-style-type: none;
-        padding: 0 15px;
-      }
-
-      section {
-        width: 400px;
-        background: #fff;
-        border: solid;
-        margin-top: 24px;
-      }
-      hgroup h2 {
-        padding: 5px 0 0 10px;
-      }
-      article {
-        width: 400px;
-        background: #ccc;
-      }
-      article p {
-        padding: 5px;
+        padding: 10px 15px;
       }
 
       aside {
@@ -60,34 +46,60 @@
         float: right;
         margin-top: 10px;
       }
-      hgroup h3 {
+      aside h3 {
         color: #fff;
         padding: 10px 0 0 10px;
+        margin: 0;
       }
       aside article {
         width: 200px;
         background: #666;
         color: white;
+        padding: 10px;
+      }
+
+      section {
+        width: 400px;
+        background: #fff;
+        border: 2px solid black;
+        margin-top: 24px;
+      }
+      section article {
+        width: 400px;
+        background: #ccc;
+      }
+      section h2 {
+        padding: 5px 0 0 10px;
+        margin: 0;
+      }
+      section p {
+        padding: 5px;
+        margin: 0;
+      }
+
+      hr {
+        width: 380px;
+        margin: 10px auto;
       }
 
       footer {
+        clear: both;
         height: 40px;
         background: darkcyan;
-        margin-top: -15px;
+        margin-top: 15px;
       }
       footer p {
         color: white;
         padding: 10px 0 0 10px;
+        margin: 0;
       }
     </style>
   </head>
   <body>
     <div id="wrapper">
       <header>
-        <hgroup>
-          <h1>header</h1>
-          <h5>header의 두번째 제목입니다.</h5>
-        </hgroup>
+        <h1>header</h1>
+        <h5>header의 두번째 제목입니다.</h5>
       </header>
 
       <nav>
@@ -101,26 +113,20 @@
       </nav>
 
       <aside>
-        <hgroup>
-          <h3>aside</h3>
-        </hgroup>
+        <h3>aside</h3>
         <article>aside의 본문입니다.</article>
       </aside>
 
       <section>
         <article>
-          <hgroup>
-            <h2>article 1</h2>
-          </hgroup>
+          <h2>article 1</h2>
           <p>article 1의 본문입니다.</p>
         </article>
 
         <hr />
 
         <article>
-          <hgroup>
-            <h2>article 2</h2>
-          </hgroup>
+          <h2>article 2</h2>
           <p>article 2의 본문입니다.</p>
         </article>
       </section>

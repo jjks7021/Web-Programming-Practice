@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>알람 만들기</title>
+  </head>
+  <body>
+    <h3>setTimeout()으로 알람 예약하기</h3>
+    <hr />
+    <script>
+      var seconds = prompt("시간을 입력하세요 [초]", "");
+
+      var str = prompt("문자열을 입력하세요", "");
+
+      var time = parseInt(seconds);
+
+      if (!isNaN(time) && time > 0) {
+        document.write(time + " 초 후에 알람이 울립니다.");
+
+        setTimeout(function () {
+          alert(str);
+        }, time * 1000);
+      } else {
+        document.write("올바른 시간을 입력해주세요.");
+      }
+    </script>
+  </body>
+</html>

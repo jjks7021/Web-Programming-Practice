@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>애니메이션 응용</title>
+    <style>
+      @keyframes boxMove {
+        0% {
+          left: 10px;
+          top: 10px;
+          background: red;
+        }
+        25% {
+          left: 210px;
+          top: 10px;
+          background: yellow;
+        }
+        50% {
+          left: 210px;
+          top: 210px;
+          background: blue;
+        }
+        75% {
+          left: 10px;
+          top: 210px;
+          background: green;
+        }
+        100% {
+          left: 10px;
+          top: 10px;
+          background: red;
+        }
+      }
+
+      div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+
+        animation-name: boxMove;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Animation</div>
+  </body>
+</html>

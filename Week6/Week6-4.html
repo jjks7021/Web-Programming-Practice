@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>큰 자리수와 낮은자리수</title>
+  </head>
+  <body>
+    <h3>큰 자리수와 낮은자리수 같은지 비교</h3>
+    <hr />
+    <script>
+      var str = prompt("숫자 입력", "0");
+
+      if (str != null) {
+        var n = parseInt(str);
+
+        if (isNaN(n)) {
+          document.write("숫자가 아닙니다.");
+        } else {
+          var lastDigit = n % 10;
+
+          var firstDigit = n;
+          while (firstDigit >= 10) {
+            firstDigit = Math.floor(firstDigit / 10);
+          }
+
+          document.write(n + ": ");
+          if (firstDigit == lastDigit) {
+            document.write("같음");
+          } else {
+            document.write("다름");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

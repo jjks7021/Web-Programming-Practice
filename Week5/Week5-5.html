@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>애니메이션 응용</title>
+    <style>
+      @keyframes moveLeft {
+        from {
+          left: 100%;
+        }
+        to {
+          left: 0%;
+        }
+      }
+
+      div {
+        position: absolute;
+        display: inline-block;
+
+        animation-name: moveLeft;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+      }
+
+      img {
+        width: 20px;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>애니메이션 응용</h3>
+    <hr />
+
+    <div>
+      <img src="QuestionMark.png" alt="질문 이미지" />
+      <strong>질문 있습니다.</strong>
+    </div>
+  </body>
+</html>

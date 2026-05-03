@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>문자열 분할</title>
+  </head>
+  <body>
+    <h3>문자열 분할</h3>
+    <hr />
+    <script>
+      var input = prompt(
+        "문자열 입력",
+        "query=java&id=5&who=kitae&target=_blank",
+      );
+
+      if (input != null) {
+        var sub = input.split("&");
+
+        for (var i = 0; i < sub.length; i++) {
+          document.write(sub[i] + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>
